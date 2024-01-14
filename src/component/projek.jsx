@@ -1,8 +1,9 @@
+import clsx from 'clsx';
 const Projek = () => {
   return (
     <div className="mt-0">
       <div className="bg-neutral-900">
-        <p className="font-Poppins text-base sm:text-xl pt-3 text-center mb-[20px] text-neutral-300">What Do I Offer</p>
+        <p className="font-Poppins text-base sm:text-xl pt-3 text-center mb-[20px] text-white opacity-90">What Do I Offer</p>
         <p className="text-center font-Poppins text-xl md:text-3xl mb-[60px] text-white ">Lorem ipsum, dolor sit Repudiandae, tempora.</p>
         <div className="border-4 z-10 -mb-1 relative rounded-full border-green-500 w-[150px] sm:w-[400px] mx-auto " />
         <div className="mx-[80px] z-0 sm:mx-[90px] md:mx-[150px] border border-black border-opacity-10 bg-neutral-700 bg-opacity-20 rounded-[10px] backdrop-blur-sm py-[60px]">
@@ -23,9 +24,31 @@ const Projek = () => {
         </div>
         <div className="py-[20px] sm:py-[40px]">
           <p className="text-center font-Poppins text-xl md:text-3xl mb-[60px] text-white">Why Hire Me</p>
+          <div className="flex gap-5 justify-center">
+            <div className='flex flex-col items-center gap-2'>
+              <Hire src="./img/comunicate.svg" />
+              <p className="text-xl text-white">Workaholic</p>
+            </div>
+            <div className='flex flex-col items-center gap-2'>
+              <Hire src="./img/Work.svg" />
+              <p className="text-xl text-white">Communicative</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 };
+
+const Hire = (props) => {
+  const { className } = props;
+  return (
+    <div className="relative rounded-full border border-neutral-400 px-2 py-2">
+      <div className={clsx(className, ' border border-green-500 rounded-full px-7 py-7 bg-lime-800 bg-opacity-10 ')}>
+        <img {...props} className="" />
+      </div>
+    </div>
+  );
+};
+
 export default Projek;

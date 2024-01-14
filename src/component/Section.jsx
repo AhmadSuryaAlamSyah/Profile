@@ -8,7 +8,7 @@ const Section = () => {
   return (
     <div>
       <div className="bg-neutral-900">
-        <div className="flex flex-col sm:flex-row opacity-90 bg-gradient-to-b from-neutral-900 via-sky-800 to-cyan-700  w-full px-[20px] md:px-[30px] lg:px-[60px]">
+        <div className="flex flex-col sm:flex-row opacity-90  w-full px-[20px] md:px-[30px] lg:px-[60px]">
           <div className="sm:w-1/2">
             <img className="scale-75 mx-auto" src="./img/Picture.svg" />
             <div className="hidden sm:flex justify-center -translate-x-10 -translate-y-14 items-center gap-4 pb-5">
