@@ -24,14 +24,22 @@ const Projek = () => {
         </div>
         <div className="py-[20px] sm:py-[40px]">
           <p className="text-center font-Poppins text-xl md:text-3xl mb-[60px] text-white">Why Hire Me</p>
-          <div className="flex gap-5 justify-center">
-            <div className='flex flex-col items-center gap-2'>
+          <div className="flex flex-col sm:flex-row gap-5 sm:gap-8 justify-center">
+            <div className="flex flex-col items-center gap-2 ">
               <Hire src="./img/comunicate.svg" />
               <p className="text-xl text-white">Workaholic</p>
             </div>
-            <div className='flex flex-col items-center gap-2'>
+            <div className="flex flex-col items-center gap-2">
               <Hire src="./img/Work.svg" />
               <p className="text-xl text-white">Communicative</p>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <Hire src="./img/like.svg" />
+              <p className="text-xl text-white">Cooperative</p>
+            </div>
+            <div className='flex flex-col items-center gap-2'>
+              <Hire src="./img/verived.svg" />
+              <p className='text-xl text-white'>Perfectionist</p>
             </div>
           </div>
         </div>
