@@ -3,8 +3,11 @@ import { faFile } from '@fortawesome/free-regular-svg-icons';
 import { faLinkedin, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import TypeIt from 'typeit-react';
+import { GlobalContext } from '../global/GlobalContetxt';
+import { useContext } from 'react';
 
 const Section = () => {
+  const { setShowCv } = useContext(GlobalContext);
   return (
     <div>
       <div className="bg-neutral-900">
@@ -35,7 +38,7 @@ const Section = () => {
             <div className="flex gap-3 my-4 ">
               <div className="bg-green-500 w-[140px] hover:scale-95 duration-300 hover:bg-green-700 text-white py-2 px-2 rounded-lg flex items-center justify-center gap-1">
                 <FontAwesomeIcon icon={faFile} style={{ color: '#ffffff' }} />
-                <button>Download CV</button>
+                <button onClick={() => setShowCv(true)}>Download CV</button>
               </div>
               <button className="border-2 w-[140px] hover:scale-95 hover:bg-slate-100 hover:text-green-500 duration-300 border-green-500 py-2 px-2 rounded-lg">More</button>
             </div>

@@ -1,12 +1,12 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile } from '@fortawesome/free-regular-svg-icons';
-import LoadingCv from '../moal/LoadingCv';
+import { GlobalContext } from '../global/GlobalContetxt';
 
 const Header = () => {
+  const { setShowCv } = useContext(GlobalContext);
   const [showMenu, setShowMenu] = useState(false);
   const [icon, setIcon] = useState(false);
-  const [showCv, setShowCv] = useState(false);
 
   const ToggleMenu = () => {
     setShowMenu(!showMenu);
@@ -54,7 +54,6 @@ const Header = () => {
           <a href="/">Contact</a>
         </div>
       ) : null}
-      {showCv && <LoadingCv showCv={showCv} setShowCv={setShowCv} />}
     </div>
   );
 };
