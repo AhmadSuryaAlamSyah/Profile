@@ -1,5 +1,10 @@
 import clsx from 'clsx';
+
+
+// Now you can use faReact in your component
+
 const Projek = () => {
+  
   return (
     <div className="mt-0">
       <div className="bg-neutral-900">
@@ -24,7 +29,7 @@ const Projek = () => {
         </div>
         <div className="py-[20px] sm:py-[40px]">
           <p className="text-center font-Poppins text-xl md:text-3xl mb-[60px] text-white">Why Hire Me</p>
-          <div className="flex flex-col sm:flex-row gap-5 sm:gap-8 justify-center">
+          <div className="flex flex-col sm:flex-row gap-5 sm:gap-8 justify-center flex-wrap px-10">
             <div className="flex flex-col items-center gap-2 ">
               <Hire src="./img/comunicate.svg" />
               <p className="text-xl text-white">Workaholic</p>
@@ -37,13 +42,23 @@ const Projek = () => {
               <Hire src="./img/like.svg" />
               <p className="text-xl text-white">Cooperative</p>
             </div>
-            <div className='flex flex-col items-center gap-2'>
+            <div className="flex flex-col items-center gap-2">
               <Hire src="./img/verived.svg" />
-              <p className='text-xl text-white'>Perfectionist</p>
+              <p className="text-xl text-white">Perfectionist</p>
             </div>
           </div>
         </div>
+        <div className="py-[20px] ">
+          <p className="text-white text-center font-Poppins text-xl md:text-2xl">Tools and Skills</p>
+          <div className="flex flex-col items-center sm:flex-row sm:justify-center gap-10 mt-4 flex-wrap px-10">
+            <img src="./img/html.svg" width={80} alt="html" />
+            <img src="./img/react.svg" width={80} alt="react" />
+            <img src="./img/nodejs.svg" width={100} alt="nodejs" />
+            <img src="./img/monggodb.svg" width={150} alt="monggodb" />
+          </div>
+        </div>
       </div>
+     
     </div>
   );
 };
