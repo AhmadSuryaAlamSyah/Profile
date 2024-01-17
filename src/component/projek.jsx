@@ -1,10 +1,8 @@
 import clsx from 'clsx';
 
-
 // Now you can use faReact in your component
 
 const Projek = () => {
-  
   return (
     <div className="mt-0">
       <div className="bg-neutral-900">
@@ -48,6 +46,25 @@ const Projek = () => {
             </div>
           </div>
         </div>
+        <div className="py-4 px-6 sm:px-7 md:px-8 lg:px-[90px]">
+          <p className="text-xl sm:text-2xl text-white text-center font-semibold">Latest Project</p>
+          <div className="border border-neutral-800 bg-[#131313] my-4 py-3 px-5 sm:py-5 sm:px-8 rounded-lg ">
+            <div className="hidden md:flex items-center justify-between gap-4">
+              <img src="./img/projek.svg" alt="projek" />
+              <p className="text-white text-normal sm:text-xl font-semibold font-Poppins">DaurUang Mobile Apps</p>
+              <button className="py-3 px-6 bg-green-500 rounded-lg text-white font-semibold mt-3 hover:bg-green-600 hover:scale-95 focus:ring-1 focus:ring-white">View</button>
+            </div>
+            <div className="w-full flex gap-6 items-center  md:hidden">
+              <div className="w-1/2">
+                <img src="./img/projek.svg" alt="projek" />
+              </div>
+              <div className="w-1/2 ">
+                <p className="text-white text-normal sm:text-xl font-semibold font-Poppins">DaurUang Mobile Apps</p>
+                <button className="py-2 px-4 bg-green-500 rounded-lg text-white font-semibold mt-3">View</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="py-[20px] ">
           <p className="text-white text-center font-Poppins text-xl md:text-2xl">Tools and Skills</p>
           <div className="flex flex-col items-center sm:flex-row sm:justify-center gap-10 mt-4 flex-wrap px-10">
@@ -58,7 +75,6 @@ const Projek = () => {
           </div>
         </div>
       </div>
-     
     </div>
   );
 };

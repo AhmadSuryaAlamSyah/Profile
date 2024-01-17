@@ -9,8 +9,8 @@ import { useContext } from 'react';
 const Section = () => {
   const { setShowCv } = useContext(GlobalContext);
   return (
-    <div>
-      <div className="bg-neutral-900">
+    <div className="relative">
+      <div className="bg-neutral-900 pt-[18px] sm:pt-[84px]">
         <div className="flex flex-col sm:flex-row opacity-90  w-full px-[20px] md:px-[30px] lg:px-[60px]">
           <div className="sm:w-1/2">
             <img className="scale-75 mx-auto" src="./img/Picture.svg" />

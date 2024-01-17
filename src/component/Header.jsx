@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <div>
+    <div className="fixed w-full z-20">
       <div className=" bg-neutral-900 flex justify-between items-center py-[18px] px-[16px] lg:px-[150px]">
         <div>
           <p className="font-Poppins text-xl text-white">Surya</p>
