@@ -7,6 +7,7 @@ import LoadingCv from './moal/LoadingCv';
 import { GlobalContext } from './global/GlobalContetxt';
 import { useContext } from 'react';
 
+
 const App = () => {
   const { showCv, setShowCv } = useContext(GlobalContext);
 

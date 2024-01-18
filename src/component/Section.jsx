@@ -40,7 +40,9 @@ const Section = () => {
                 <FontAwesomeIcon icon={faFile} style={{ color: '#ffffff' }} />
                 <button onClick={() => setShowCv(true)}>Download CV</button>
               </div>
-              <button className="border-2 w-[140px] hover:scale-95 hover:bg-slate-100 hover:text-green-500 duration-300 border-green-500 py-2 px-2 rounded-lg">More</button>
+              <button className="border-2 w-[140px] hover:scale-95 hover:bg-slate-100 hover:text-green-500 duration-300 border-green-500 py-2 px-2 rounded-lg" onClick={() => setShowCv(true)}>
+                More
+              </button>
             </div>
           </div>
         </div>

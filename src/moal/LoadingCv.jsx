@@ -4,7 +4,7 @@ const LoadingCv = ({ setShowCv }) => {
       <div className="w-[500px] mx-auto border border-black mt-2 rounded-lg py-5 bg-zinc-800 ">
         <div className="flex flex-col items-center gap-3">
           <img src="./img/searching.svg" width={200} alt="loading" />
-          <p className="text-xl text-white font-semibold">Loading......</p>
+          <p className="text-base text-white font-semibold">Belum Update......</p>
           <button className="bg-red-500 hover:bg-red-600 text-white font-semibold rounded-lg px-4 py-2" onClick={() => setShowCv(false)}>
             Close
           </button>
