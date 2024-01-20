@@ -7,5 +7,5 @@ module.exports = {
       Poppins: ['Poppins'],
     },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 };
