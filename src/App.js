@@ -6,10 +6,12 @@ import Projek from './component/projek';
 import LoadingCv from './moal/LoadingCv';
 import { GlobalContext } from './global/GlobalContetxt';
 import { useContext } from 'react';
+
 import Footer from './component/footer';
+import Form from './moal/Form';
 
 const App = () => {
-  const { showCv, setShowCv } = useContext(GlobalContext);
+  const { showCv, setShowCv, showForm, setShowForm } = useContext(GlobalContext);
 
   return (
     <div className="App">
@@ -18,6 +20,7 @@ const App = () => {
       <Projek />
       {showCv && <LoadingCv showCv={showCv} setShowCv={setShowCv} />}
       <Footer />
+      {showForm && <Form showForm={showForm} setShowForm={setShowForm} />}
     </div>
   );
 };

@@ -4,15 +4,20 @@ import { faLinkedin, faInstagram, faFacebook } from '@fortawesome/free-brands-sv
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import TypeIt from 'typeit-react';
 import { GlobalContext } from '../global/GlobalContetxt';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Section = () => {
   const { setShowCv } = useContext(GlobalContext);
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
-    <div className="relative">
+    <div className="relative" id="about">
       <div className="bg-neutral-900 pt-[18px] sm:pt-[84px]">
         <div className="flex flex-col sm:flex-row opacity-90  w-full px-[20px] md:px-[30px] lg:px-[60px]">
-          <div className="sm:w-1/2">
+          <div className="sm:w-1/2" data-aos="fade-right">
             <img className="scale-75 mx-auto" src="./img/Picture.svg" />
             <div className="hidden sm:flex justify-center -translate-x-10 -translate-y-14 items-center gap-4 pb-5">
               <p className=" text-white text-sm font-semibold">Find Me On</p>
@@ -23,7 +28,7 @@ const Section = () => {
               </div>
             </div>
           </div>
-          <div className="text-white flex flex-col justify-center sm:w-1/2  font-medium  -translate-y-10 sm:-translate-y-0">
+          <div className="text-white flex flex-col justify-center sm:w-1/2  font-medium  -translate-y-10 sm:-translate-y-0" data-aos="fade-up">
             <p className="text-2xl sm:text-3xl"> Hallooo </p>
             <p className="text-2xl sm:text-3xl">
               I am <span className="text-green-500 font-bold"> Ahmad Surya Alam Syah</span>

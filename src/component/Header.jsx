@@ -22,22 +22,19 @@ const Header = () => {
         <div className="sm:hidden ">{icon ? <img onClick={ToggleMenu} src="./img/icon.svg" alt="close" /> : <img onClick={ToggleMenu} src="./img/menu.svg" alt="menu" />}</div>
         <div className="hidden sm:flex sm:gap-[20px] lg:gap-[40px] text-white text-base font-medium font-['DM Sans'] leading-none">
           <div className="flex flex-col justify-center items-center">
-            <a className="hover:text-green-500" href="/">
+            <a className="hover:text-green-500" href="#about">
               About
             </a>
-            <div className="hidden hover:flex border-2 border-green-500 w-[55px] my-2" />
           </div>
           <div className="flex flex-col justify-center items-center">
-            <a className="hover:text-green-500" href="/">
+            <a className="hover:text-green-500" href="#skill">
               Skill
             </a>
-            <div className="border-2 border-green-500 w-[40px] my-2" />
           </div>
           <div className="flex flex-col justify-center items-center">
-            <a className="hover:text-green-500" href="/">
+            <a className="hover:text-green-500" href="#contact">
               Contact
             </a>
-            <div className="border-2 border-green-500 w-[60px] my-2" />
           </div>
         </div>
         <div className="hidden sm:flex w-[169px] hover:scale-95 hover:bg-green-700 duration-300 h-12 px-5 py-4 bg-green-500 rounded-lg justify-center items-center gap-2.5 ">
