@@ -61,7 +61,7 @@ const Projek = () => {
           </p>
           <div className="border border-neutral-800 bg-[#131313] my-10 py-3 px-5 sm:py-5 sm:px-8 rounded-lg " data-aos="fade-up">
             <div className="hidden md:flex items-center justify-between gap-4" data-aos="fade-up">
-              <img src="./img/projek.svg" alt="projek" />
+              <img src="./img/InpoLoker.png" className="rounded-lg" width={300} alt="projek" />
               <p className="text-white text-normal sm:text-xl font-semibold font-Poppins">Website Loker</p>
               <a className="py-3 px-6 bg-green-500 rounded-lg text-white font-semibold mt-3 hover:bg-green-600 hover:scale-90 focus:ring-1 focus:ring-white duration-300" href="https://inpoloker.netlify.app">
                 View
@@ -69,7 +69,7 @@ const Projek = () => {
             </div>
             <div className="w-full flex gap-6 items-center  md:hidden">
               <div className="w-1/2">
-                <img src="./img/projek.svg" alt="projek" />
+                <img src="./img/InpoLoker.png" className="rounded-lg" width={250} alt="projek" />
               </div>
               <div className="w-1/2 ">
                 <p className="text-white text-normal sm:text-xl font-semibold font-Poppins mb-4">Website Loker</p>
