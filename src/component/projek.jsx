@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
 const Projek = () => {
   useEffect(() => {
     Aos.init();
-  });
+  }, []);
   return (
     <div className="mt-0">
       <div className="bg-neutral-900">
@@ -63,7 +63,12 @@ const Projek = () => {
             <div className="hidden md:flex items-center justify-between gap-4" data-aos="fade-up">
               <img src="./img/InpoLoker.png" className="rounded-lg" width={300} alt="projek" />
               <p className="text-white text-normal sm:text-xl font-semibold font-Poppins">Website Loker</p>
-              <a className="py-3 px-6 bg-green-500 rounded-lg text-white font-semibold mt-3 hover:bg-green-600 hover:scale-90 focus:ring-1 focus:ring-white duration-300" href="https://inpoloker.netlify.app">
+              <a
+                className="py-3 px-6 bg-green-500 rounded-lg text-white font-semibold mt-3 hover:bg-green-600 hover:scale-90 focus:ring-1 focus:ring-white duration-300"
+                href="https://inpoloker.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 View
               </a>
             </div>

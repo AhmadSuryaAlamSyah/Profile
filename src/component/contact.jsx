@@ -7,7 +7,7 @@ const Contact = () => {
   const { setShowForm } = useContext(GlobalContext);
   useEffect(() => {
     Aos.init();
-  });
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -26,15 +26,15 @@ const Contact = () => {
             <div data-aos="fade-up">
               <div className="flex flex-col">
                 <label className="text-white mb-2 text-base font-Poppins font-semibold">Nama :</label>
-                <input className="py-[10px] px-[20px] rounded-lg bg-neutral-800 border focus:bg-white " type="text" id="inputName" placeholder="Nama" />
+                <input className="py-[10px] px-[20px] rounded-lg bg-neutral-800 border focus:bg-white " type="text" id="inputName" placeholder="Nama" required />
               </div>
               <div className="flex flex-col mt-[24px]">
                 <label className="text-white mb-2 text-base font-Poppins font-semibold">Email :</label>
-                <input className="py-[10px] px-[20px] rounded-lg bg-neutral-800 border focus:bg-white " type="text" id="inputEmail" placeholder="exsample@gmail.com" />
+                <input className="py-[10px] px-[20px] rounded-lg bg-neutral-800 border focus:bg-white " type="text" id="inputEmail" placeholder="exsample@gmail.com" required />
               </div>
               <div className="flex flex-col mt-[24px]">
                 <label className="text-white mb-2 text-base font-Poppins font-semibold">Message :</label>
-                <textarea className="py-[10px] px-[20px] rounded-lg bg-neutral-800 border focus:bg-white " type="text" id="inputPesan" placeholder="message" />
+                <textarea className="py-[10px] px-[20px] rounded-lg bg-neutral-800 border focus:bg-white " type="text" id="inputPesan" placeholder="message" required />
               </div>
               <button className="text-white mt-[24px] hover:scale-95 bg-green-500 hover:bg-green-600 rounded-lg py-[10px] px-[20px] font-Poppins font-semibold" type="submit">
                 Send
